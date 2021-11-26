@@ -5,7 +5,7 @@ Set a default app to launch a clicked jupyter notebook in a python virtual envir
 You'll need virtual environment manager for python, so that juypter knowns where to install + import python packages from when you use the notebooks.
 
 
-## Setting up: 
+## Setting up double clicking functionality (see prerequisites section below first). 
 follow the screenshot which is taken from this [stackoverflow post](https://stackoverflow.com/questions/30953227/double-click-to-open-an-ipython-notebook)
 ![image](stackoverflow_post.png)
 
