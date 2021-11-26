@@ -4,7 +4,10 @@ Set a default app to launch a clicked jupyter notebook in a python virtual envir
 
 You'll need virtual environment manager for python, so that juypter knowns where to install + import python packages from when you use the notebooks.
 
-## Setting up: follow the screenshot which is taken from this [stackoverflow post](https://stackoverflow.com/questions/30953227/double-click-to-open-an-ipython-notebook)
+
+## Setting up: 
+follow the screenshot which is taken from this [stackoverflow post](https://stackoverflow.com/questions/30953227/double-click-to-open-an-ipython-notebook)
+![image](stackoverflow_post.png)
 
 1. Open Mac "Automator" Utilities App.
 2. Create new app
@@ -25,12 +28,13 @@ osascript -e "${the_script}${variable}\""
 
 Note: if you want to use Anaconda instead of PYenv for the virtual environment, just change the code you pasted into the Automator app: change `~/sand_py394/bin/activate` to `conda activate <name_of_your_anaconda_environment>`.
 
+
 ## Prerequisites
 
 ### installl command line tools for Mac
 `xcode-select --install`  
 
-### Download and install [homebrew](https://brew.sh/) from their website
+### install [homebrew](https://brew.sh/) from their website
 
 ### install python dependencies:
 `brew install openssl readline sqlite3 xz zlib`  
@@ -62,5 +66,8 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 `pip install --upgrade pip`  
 `pip install jupyter-notebook`  
 `python3 -m pip install nbopen`  
-`deactivate`  
+`deactivate`   
+
 **Now it's ready.**
+
+Author: George Goldberg (2021)
